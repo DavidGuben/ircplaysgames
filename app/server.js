@@ -110,25 +110,6 @@ io.on('connection', function(socket) {
 process.setMaxListeners(16);
 
 //login functionality
-app.get('/:id', function(req, res) {
-    console.log(req.params);
-    console.log('specific users homepage' + req.params.id);
-    userlogininfos.findOne({ where: {id: req.params.id}}).then(function(user) {
-      console.log(user.dataValues);
-      var user = user.dataValues;
-      res.render('home', {
-        userData: user
-      });
-    });
-});
-
-app.post('/login', function(req, res){
-
-    userlogininfos.findOne({ where: {username: req.body.username }}).then(function(data){
-    console.log(data);
-     res.redirect('/' + data.dataValues.id)
-  });
-});
 
 
 // server listener
