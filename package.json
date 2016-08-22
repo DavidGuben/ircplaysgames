@@ -1,0 +1,23 @@
+{
+  "name": "TwitchPlaysX",
+  "description": "Lets you use IRC to send inputs to a program and stream it, TwitchPlaysPokemon style",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "http": "0.0.0",
+    "irc": "github:martynsmith/node-irc#605555e3dfe5eb92070f4520a22cedfbebd4dca8",
+    "mysql": "^2.11.1",
+    "nconf": "^0.7.1",
+    "printf": "^0.2.5",
+    "sequelize": "^3.24.1",
+    "socket.io": "^1.4.8"
+  },
+  "scripts": {
+    "start": "node ./app/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hzoo/TwitchPlaysX.git"
+  }
+}
