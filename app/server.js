@@ -15,9 +15,12 @@ var handlebars = require('express-handlebars');
 var bodyParser = require('body-parser');
 var sequelize  = require('sequelize');
 var path       = require('path');
+var $          = require('jquery');
 
 // database
 var userlogininfos = require('./models')['userlogininfos'];
+
+app.use('/public', express.static(__dirname + '/public'));
 
 console.log(__dirname + '/public');
 
@@ -37,7 +40,7 @@ app.use(express.static(path.join(__dirname)));
 // irc client connection
 var client = new irc.Client(config.server, config.nick, {
     channels: [config.channel],
-    port: config.port || 6667, // this is the port the irc connects to
+    port: config.port || 6667, // IRC Port
     sasl: false,
     nick: config.nick,
     userName: config.nick,     // pulls username from irc client  (AndroIRC)
@@ -121,3 +124,5 @@ http.listen(3000, function() {
 console.log('Connecting to IRC...');
 console.log('connected to irc.freenote.net');
 console.log('Emulator: ZSNES');
+
+// Code written by: David Guben

@@ -9,7 +9,7 @@
 
       <!-- Latest compiled and minified JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-      <title>Socket.IO chat</title>
+      <title>Stream.io</title>
       <style>
         * { margin: 0; padding: 0; }
         body { font: 13px Helvetica, Arial; }
@@ -23,6 +23,14 @@
      </style>
   </head>
   <body>
+    <iframe
+    src="http://player.twitch.tv/?channel=rcbplayspokemon"
+    height="720"
+    width="1280"
+    frameborder="0"
+    scrolling="no"
+    allowfullscreen="true">
+</iframe>
     <ul id="messages"></ul>
     <form action="">
       <input id="m" autocomplete="off" /><button class="btn btn-primary">Send</button>
@@ -40,10 +48,7 @@
       socket.on('chat message', function(msg) {
         $('#messages').append($('<li>').text(msg));
       });
-
-
-})
-
+  });
     </script>
   </body>
 </html>

@@ -3,12 +3,16 @@
   "description": "Lets you use IRC to send inputs to a program and stream it, TwitchPlaysPokemon style",
   "version": "0.0.1",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "http": "0.0.0",
-    "irc": "github:martynsmith/node-irc#605555e3dfe5eb92070f4520a22cedfbebd4dca8",
+    "irc": "martynsmith/node-irc#605555e3dfe5eb92070f4520a22cedfbebd4dca8",
+    "jquery": "^3.1.0",
+    "jsdom": "^9.4.2",
     "mysql": "^2.11.1",
-    "nconf": "^0.7.1",
+    "nconf": "^0.7.2",
+    "path": "^0.12.7",
     "printf": "^0.2.5",
     "sequelize": "^3.24.1",
     "socket.io": "^1.4.8"

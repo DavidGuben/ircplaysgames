@@ -18,11 +18,9 @@ app.engine('handlebars',handlebars({
 
 app.set('view engine', 'handlebars');
 
-
 app.use(express.static(path.join(__dirname)));
 
 app.get('/', function(req, res){
-
     res.render('index');
 });
 

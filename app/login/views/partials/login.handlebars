@@ -1,17 +1,32 @@
- <div class="container">
+<div class="container">
+   <script type="text/javascript" src="script.js"></script>
+   <script>
+   require("jsdom").env("", function(err, window) {
+       if (err) {
+           console.error(err);
+           return;
+       }
+
+       var $ = require("jquery")(window);
+   });
+   $(document).ready(function() {
+       $('#img').click(function() {
+           $(this).fadeOut('slow');
+       });
+   });
+   </script>
         <div class="row">
           <div class="col-md-12 logo">
-            <a href="javascript:;"><img src="/public/img/Image 20160824 RCB logo.jpg" class="img-responsive center-block"></a>
+            <a href="javascript:;"><img src="/public/img/Image 20160824 RCB logo.jpg" id="img" class="img-responsive center-block"></a>
           </div>
         </div>
         </div>
-
         <div class="container-fluid bg">
             <div class="container page-container">
                 <div class="row">
-                    <div class="col-md-12 login popup-bg">
+                    <div class="col-md-12 login">
                         <img src="/public/img/logo-opp.png" class="img-responsive center-block logo-imgbuffer">
-                    
+
                         <div class="col-md-12 heading-img">
                             <img src="/public/img/heading.png" class="img-responsive center-block">
                         </div>
@@ -65,7 +80,7 @@
                                 <input type="email" class="form-control inputborder" id="email" placeholder="Email Address">
                               </div>
                                 <div class="col-md-4">
-                                   
+
                                 </div>
                                 <div class="col-md-4" style="float: right;">
                                     <div class="form-group text-center">
@@ -90,12 +105,17 @@
                     </div>
                 </div>
             </div>
-      
-               
-          
+            <script>
+            $(document).ready(function() {
+              $('#login').mouseenter(function() {
+                  $('#login').fadeOut('slow', 0.25);
+                  $("#login").stop().animate({height : "300px"});
+              });
+            });
+
+            </script>
+
         </div>
-        <footer> 
+        <footer>
             Rutgers Boot Camp Class Project @2016
         </footer>
-                   
-        
