@@ -15,8 +15,10 @@ My goal is to break this down into an app that can run without any external soft
 <br/> 3. Commit your changes: `git commit -am 'Add some feature'`
 <br/> 4. Push to the branch: `git push origin my-new-feature`
 <br/> 5. Submit a pull request :D
-## History
-The story begins here...
+## Connection info
+IRC port: 6667 || server port: 3000
+<br/>A twitch stream key is required to host the game you can get it here: https://www.twitch.tv/[YOUR_TWITCH_CHANNEL_HERE]/dashboard/streamkey
+
 ## Credits
 Developers involved in creating this app:
 <br/> Angelo B. :   https://github.com/bov188
