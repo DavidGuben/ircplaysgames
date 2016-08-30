@@ -12,11 +12,11 @@ To use the app you need the following programs:
 4. Friends! This is a lot of fun with a group of people because it's a way of controlling the game one command at a time so you either work with your friends to beat the game or work against your friends because that's just more fun.
 ## Contributing
 My goal is to break this down into an app that can run without any external software. which is surprisingly difficult. Also, this doesn't work on Windows because it utilizes Python to convert keystrokes. (windows doesn't have Python (boo!) because they utilize their own languages to accomplish what Python does for Mac and Linux).
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+\n 1. Fork it!
+\n 2. Create your feature branch: `git checkout -b my-new-feature`
+\n 3. Commit your changes: `git commit -am 'Add some feature'`
+\n 4. Push to the branch: `git push origin my-new-feature`
+\n 5. Submit a pull request :D
 ## History
 The story begins here...
 ## Credits
