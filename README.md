@@ -23,5 +23,3 @@ Developers involved in creating this app:
 <br/> David G.  :   https://github.com/DavidGuben
 <br/> Mike M.   :   https://github.com/MMagnani5
 <br/> Vijay C.  :   https://github.com/accutechhi
-
-<tabTrigger>readme</tabTrigger>
