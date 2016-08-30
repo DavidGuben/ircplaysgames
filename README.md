@@ -1,7 +1,7 @@
 # Stream.it
 IRC controlled chatroom that can plays games through defined commands from your phone or users can just chat together live while watching people frustratingly try to control the game.
 ## Installation
-To install the application you need to clone the repo. and run `npm i --save` to install all the dependencies.
+To install the application you need to clone the repo. Then, run `npm i --save` to install all the dependencies.
 ## Usage
 To use the app you need the following programs:
 <br/> 1. An Emulator to run the game from (ZSNES, GBA, Dolphin, ETC.) ZSNES: https://www.fosshub.com/ZSNES.html
