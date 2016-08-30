@@ -14,17 +14,10 @@ body{
 }
 
 .form-buffer{
-  
+
   font-size: 19px;
-  border: solid 3px #f6a204;
+  border: solid 2px #fff;
   padding: 0px 0px 0px 0px;
-}
-.form-buffer{
-  
-  font-size: 19px;
-  border: solid 3px #f6a204;
-  padding: 0px 0px 0px 0px;
-  
 }
 
 .contents{
@@ -38,7 +31,7 @@ body{
   /* border: solid 4px #fff; */
 }
 .login{
-  
+
   margin-top: 90px;
   height: 547px;
 
@@ -61,15 +54,22 @@ body{
   margin-left: 425px;
 }
 
-
-
+.inputOpaque {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.centerIt {
+  text-align:center;
+}
+.whtTXT {
+  color: #FFF;
+  font-weight: bold;
+}
 .login .form-control{
   font-weight: bold;
-  color: #fff!important;
+  color: #fff !important;
   border-radius: 3px;
-  background-color: rgba(0, 0, 0, 0.09);
   box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
-  
+
 }
 
 .inputborder{
@@ -77,22 +77,5 @@ body{
   border-right: None;
   border-top: None;
   border-radius: 0!important;
-  border-bottom: solid 2px; 
-
+  border-bottom: solid 2px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
