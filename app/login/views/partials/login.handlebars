@@ -8,18 +8,19 @@
         <div class="container-fluid bg">
             <div class="container page-container">
                 <div class="row">
+                  <img src="/public/img/pikachu.png" id="pikachu">
                     <div class="col-md-12 login">
                         <img src="/public/img/logo-opp.png" class="img-responsive center-block logo-imgbuffer">
                         <div class="col-md-12 heading-img">
-                            <img src="/public/img/heading.png" class="img-responsive center-block">
+                            <img src="/public/img/heading.png" id ="img" class="img-responsive center-block">
                         </div>
                         <div class="col-md-12 hidelogin">
                             <form role="form" method="POST" action="/login">
                               <div class="form-group">
-                                <input type="email" class="form-control inputborder inputOpaque whtTXT" id="email" placeholder="User Name" name="username">
+                                <input type="email" class="form-control inputborder inputOpaque" id="email" placeholder="User Name" name="username">
                               </div>
                               <div class="form-group">
-                                <input type="password" class="form-control inputborder inputOpaque whtTXT" id="password" placeholder="Password" name="password">
+                                <input type="password" class="form-control inputborder inputOpaque" id="password" placeholder="Password" name="password">
                               </div>
                                 <div class="col-md-4">
                                 </div>
@@ -33,10 +34,10 @@
                          <div class="col-md-12 reg-popup">
                             <form role="form" method="POST" action="/createNewUser">
                               <div class="form-group">
-                                <input type="text" class="form-control inputborder inputOpaque whtTXT" id="email" placeholder="User Name" name="username">
+                                <input type="text" class="form-control inputborder inputOpaque" id="email" placeholder="User Name" name="username">
                               </div>
                               <div class="form-group">
-                                <input type="password" class="form-control inputborder inputOpaque whtTXT" id="password" placeholder="Password" name="password">
+                                <input type="password" class="form-control inputborder inputOpaque" id="password" placeholder="Password" name="password">
                               </div>
                            <!--   <div class="form-group">
                                 <input type="email" class="form-control inputborder" id="email" placeholder="Email Address" name="email">
@@ -95,6 +96,3 @@
             });
             </script>
         </div>
-        <footer>
-            Rutgers Boot Camp Class Project @2016
-        </footer>

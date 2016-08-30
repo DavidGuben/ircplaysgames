@@ -3,7 +3,7 @@ body{
 }
 .bg{
   background-image: url("../img/bg.jpg");
-  height: 700px;
+  height: 800px;
 }
 .logo{
   margin: 10px 0px 10px;
@@ -55,7 +55,7 @@ body{
 }
 
 .inputOpaque {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.10);
 }
 .centerIt {
   text-align:center;
@@ -66,7 +66,6 @@ body{
 }
 .login .form-control{
   font-weight: bold;
-  color: #fff !important;
   border-radius: 3px;
   box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
 
@@ -76,6 +75,30 @@ body{
   border-left: None;
   border-right: None;
   border-top: None;
-  border-radius: 0!important;
+  border-radius: 5 !important;
   border-bottom: solid 2px;
+}
+
+@keyframes fadeIn {
+from {top:0px; opacity: 0;}
+to {top:200px; opacity: 1;}
+}
+@keyframes moveUpFadeIn {
+  from {top:0px; opacity: 0;}
+  to {top:110px; opacity: 1;}
+}
+#img {
+  -webkit-animation-name: fadeIn; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+  animation-name: fadeIn;
+  animation-duration: 4s;
+}
+#pikachu {
+  position:fixed;
+  width:180px;
+  height:180px;
+  -webkit-animation-name: moveUpFadeIn; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+  animation-name: moveUpFadeIn;
+  animation-duration: 3s;
 }
