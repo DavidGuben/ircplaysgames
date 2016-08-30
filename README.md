@@ -1,5 +1,3 @@
-<snippet>
-  <content><![CDATA[
 # Stream.it
 IRC controlled chatroom that can plays games through defined commands from your phone or users can just chat together live while watching people frustratingly try to control the game.
 ## Installation
@@ -21,12 +19,9 @@ My goal is to break this down into an app that can run without any external soft
 The story begins here...
 ## Credits
 Developers involved in creating this app:
-<br/> David G.  :   https://github.com/DavidGuben
 <br/> Angelo B. :   https://github.com/bov188
+<br/> David G.  :   https://github.com/DavidGuben
 <br/> Mike M.   :   https://github.com/MMagnani5
 <br/> Vijay C.  :   https://github.com/accutechhi
 
-
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
+<tabTrigger>readme</tabTrigger>
