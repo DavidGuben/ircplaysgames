@@ -83,7 +83,7 @@ body{
 from {top:0px; opacity: 0;}
 to {top:200px; opacity: 1;}
 }
-@keyframes moveUpFadeIn {
+@keyframes moveDownFadeIn {
   from {top:0px; opacity: 0;}
   to {top:110px; opacity: 1;}
 }
@@ -96,9 +96,9 @@ to {top:200px; opacity: 1;}
 #pikachu {
   position:fixed;
   width:180px;
-  height:180px;
-  -webkit-animation-name: moveUpFadeIn; /* Chrome, Safari, Opera */
-  -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
-  animation-name: moveUpFadeIn;
-  animation-duration: 3s;
+  height:200px;
+  -webkit-animation-name: moveDownFadeIn; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+  animation-name: moveDownFadeIn;
+  animation-duration: 2s;
 }
