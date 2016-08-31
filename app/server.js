@@ -95,7 +95,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/webchat', function(req, res) {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/indexChat.html');
 });
 
 app.get('/home/:id', function(req, res) {
