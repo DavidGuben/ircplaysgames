@@ -1,33 +1,32 @@
- <div class="container">
+<div class="container">
         <div class="row">
           <div class="col-md-12 logo">
-            <a href="javascript:;"><img src="/public/img/logo.png" class="img-responsive center-block"></a>
+            <a href="javascript:;"><img src="/public/img/Image 20160824 RCB logo.jpg" id="img" class="img-responsive center-block"></a>
           </div>
         </div>
         </div>
-
         <div class="container-fluid bg">
             <div class="container page-container">
                 <div class="row">
-                    <div class="col-md-12 login popup-bg">
+                  <img src="/public/img/pikachu.png" id="pikachu">
+                    <div class="col-md-12 login">
                         <img src="/public/img/logo-opp.png" class="img-responsive center-block logo-imgbuffer">
-                    
                         <div class="col-md-12 heading-img">
-                            <img src="/public/img/heading.png" class="img-responsive center-block">
+                            <img src="/public/img/heading.png" id ="img" class="img-responsive center-block">
                         </div>
                         <div class="col-md-12 hidelogin">
                             <form role="form" method="POST" action="/login">
                               <div class="form-group">
-                                <input type="email" class="form-control inputborder" id="email" placeholder="User Name" name="username">
+                                <input type="email" class="form-control inputborder inputOpaque" id="email" placeholder="User Name" name="username">
                               </div>
                               <div class="form-group">
-                                <input type="password" class="form-control inputborder" id="password" placeholder="Password" name="password">
+                                <input type="password" class="form-control inputborder inputOpaque" id="password" placeholder="Password" name="password">
                               </div>
                                 <div class="col-md-4">
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group text-center">
-                                        <input type="submit" class="form-control form-buffer" id="login" value="Log In">
+                                        <input type="submit" class="form-control form-buffer btn btn-primary" id="login" value="Login">
                                     </div>
                                 </div>
                             </form>
@@ -35,12 +34,12 @@
                          <div class="col-md-12 reg-popup">
                             <form role="form" method="POST" action="/createNewUser">
                               <div class="form-group">
-                                <input type="text" class="form-control inputborder" id="email" placeholder="User Name" name="username">
+                                <input type="text" class="form-control inputborder inputOpaque" id="email" placeholder="User Name" name="username">
                               </div>
                               <div class="form-group">
-                                <input type="password" class="form-control inputborder" id="password" placeholder="Password" name="password">
+                                <input type="password" class="form-control inputborder inputOpaque" id="password" placeholder="Password" name="password">
                               </div>
-                              <div class="form-group">
+                           <!--   <div class="form-group">
                                 <input type="email" class="form-control inputborder" id="email" placeholder="Email Address" name="email">
                               </div>
                                 <!-- <div class="col-md-4">
@@ -48,7 +47,7 @@
                                 </div> -->
                                 <div class="col-md-3">
                                     <div class="form-group text-center">
-                                        <input type="submit" class="form-control form-buffer submit-buffer" id="login" value="Submit">
+                                        <input type="submit" class="form-control form-buffer submit-buffer btn btn-primary" id="login" value="New User">
                                     </div>
                                 </div>
                             </form>
@@ -65,7 +64,7 @@
                                 <input type="email" class="form-control inputborder" id="email" placeholder="Email Address">
                               </div>
                                 <div class="col-md-4">
-                                   
+
                                 </div>
                                 <div class="col-md-4" style="float: right;">
                                     <div class="form-group text-center">
@@ -77,27 +76,23 @@
                         <div class="col-md-12 hidelogin">
                             <div class="col-md-3">
                             </div>
-                            <div class="col-md-9">
-                                <div class="form-group">
-                                    <a href="javascript:;" class="form-contents contents showRegpopup">Register</a>
-                                    <a href="javascript:;" class="form-contents contents showforgotpass">Forgot your password?</a>
-                                </div>
+                            <div class="col-md-12 centerIt">
+                                    <a href="javascript:;" class="form-contents contents showRegpopup whtTXT">Register</a>
+                                    <a href="javascript:;" class="form-contents contents showforgotpass whtTXT">Forgot your password?</a>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <img src="/public/img/login-logo.png" class="img-responsive center-block">
-                        </div>
+                           <!-- <img src="/public/img/login-logo.png" class="img-responsive center-block">
+                        </div> -->
                     </div>
                 </div>
             </div>
-      
-               
-          
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12  text-center">
-                    Rutgers Boot Camp Class Project @2016
-                </div>
-            </div>
+            <script>
+            $(document).ready(function() {
+              $('#login').mouseenter(function() {
+                  $('#login').fadeOut('slow', 0.25);
+                  $("#login").stop().animate({height : "300px"});
+              });
+            });
+            </script>
         </div>

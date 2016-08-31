@@ -15,7 +15,7 @@ var handlebars = require('express-handlebars');
 var bodyParser = require('body-parser');
 var sequelize  = require('sequelize');
 var path       = require('path');
-var $          = require('jquery');
+var bcrypt     = require('bcrypt-nodejs');
 
 // database
 var userlogininfos = require('./models')['userlogininfos'];
@@ -113,6 +113,8 @@ io.on('connection', function(socket) {
 process.setMaxListeners(16);
 
 //login functionality
+
+
 
 
 // server listener
