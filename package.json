@@ -3,6 +3,7 @@
   "description": "Lets you use IRC to send inputs to a program and stream it, TwitchPlaysPokemon style",
   "version": "0.0.1",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",

@@ -1,0 +1,104 @@
+body{
+  background-color: black;
+}
+.bg{
+  background-image: url("../img/bg.jpg");
+  height: 800px;
+}
+.logo{
+  margin: 10px 0px 10px;
+
+}
+.center-block{
+  height: 70px;
+}
+
+.form-buffer{
+
+  font-size: 19px;
+  border: solid 2px #fff;
+  padding: 0px 0px 0px 0px;
+}
+
+.contents{
+  margin-left: 15px;
+}
+.heading-img{
+  margin: 15px 0px 15px 0px;
+}
+.popup-bg{
+  background-image: url("../img/popop-bg.png");
+  /* border: solid 4px #fff; */
+}
+.login{
+
+  margin-top: 90px;
+  height: 547px;
+
+ }
+
+.logo-imgbuffer{
+  margin-top: 15px;
+
+}
+.forgotpass{
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fff;
+
+}
+
+.submit-buffer{
+  margin-top: 20px;
+  margin-left: 425px;
+}
+
+.inputOpaque {
+  background-color: rgba(0, 0, 0, 0.10);
+}
+.centerIt {
+  text-align:center;
+}
+.whtTXT {
+  color: #FFF;
+  font-weight: bold;
+}
+.login .form-control{
+  font-weight: bold;
+  border-radius: 3px;
+  box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
+
+}
+
+.inputborder{
+  border-left: None;
+  border-right: None;
+  border-top: None;
+  border-radius: 5 !important;
+  border-bottom: solid 2px;
+}
+
+@keyframes fadeIn {
+from {top:0px; opacity: 0;}
+to {top:200px; opacity: 1;}
+}
+@keyframes moveDownFadeIn {
+  from {top:0px; opacity: 0;}
+  to {top:110px; opacity: 1;}
+}
+#img {
+  -webkit-animation-name: fadeIn; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+  animation-name: fadeIn;
+  animation-duration: 4s;
+}
+#pikachu {
+  position:fixed;
+  width:180px;
+  height:200px;
+  -webkit-animation-name: moveDownFadeIn; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+  animation-name: moveDownFadeIn;
+  animation-duration: 2s;
+}
