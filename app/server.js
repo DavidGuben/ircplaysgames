@@ -94,11 +94,11 @@ app.get('/', function(req, res){
     res.render('index');
 });
 
-app.get('/webchat', function(req, res) {
+app.get('/webchat/:id', function(req, res) {
   res.sendFile(__dirname + '/indexChat.html');
 });
 
-app.get('/home/:id', function(req, res) {
+/*app.get('/home/:id', function(req, res) {
     console.log("beginning of redirect");
     console.log(req.params);
     console.log('specific users homepage' + req.params.id);
@@ -110,30 +110,39 @@ app.get('/home/:id', function(req, res) {
         userData: userData
       });
     });
-});
+});*/
+
+app.get('/invalid-login', function(req, res) {
+  res.render('invalid-login');
+})
 
 app.post('/login', function(req, res){
-
+    //Searches database for username
     userlogininfos.findOne({ where: {username: req.body.username }}).then(function(data){
-    console.log(data);
-    console.log("login");
-     res.redirect('/home/' + data.dataValues.id)
-
-
-
-  });
+    //Compares the plaintext PW provided by user to the encrypted PW stored in database (returns true or false)
+    var validPassword = bcrypt.compareSync(req.body.password, data.dataValues.password);  
+    if (validPassword) {
+      console.log("Valid Password = ", validPassword);
+      console.log("LOGGING IN ... ");
+      //Directs user to chat
+     res.redirect('/webchat/' + data.dataValues.id)
+    } else {
+      //Directs user to invalid-login page
+      console.log("INVALID PASSWORD SPECIFIED");
+      res.redirect('/invalid-login')
+    }
+});
 
 });
 app.post('/createNewUser',function(req, res){
-   console.log(req.body.username);
-   console.log(req.body.password);
-   console.log(req.body.email);
+   //Generates Salt and Hash for password to be stored in DB
+   var hash = userlogininfos.generateHash(req.body.password);
    userlogininfos.create({
      username: req.body.username,
-     password: req.body.password
+     password: hash
   }).then(function(data){
     console.log('data',data);
-    res.redirect('/home/' + data.dataValues.id)
+    res.redirect('/webchat/' + data.dataValues.id)
   });
 });
 
