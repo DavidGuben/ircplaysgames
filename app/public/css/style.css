@@ -102,3 +102,12 @@ to {top:200px; opacity: 1;}
   animation-name: moveDownFadeIn;
   animation-duration: 2s;
 }
+
+#invalid-pika {
+  height: 325px;
+}
+
+#invalid-pika-container {
+  font-weight: bold;
+  text-align: center;
+}
