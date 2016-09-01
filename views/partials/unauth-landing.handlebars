@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 logo">
+      <img src="/public/img/Image 20160824 RCB logo.jpg" id="img" class="img-responsive center-block">
+    </div>
+  </div>
+</div>
+        
+<div class="container-fluid bg">
+
+
+ <div id="invalid-pika-container">
+    <h1>Opps! Invalid login information</h1>
+   <img src="/public/img/invalid-pika.png" id="invalid-pika" id="img" class="img-responsive center-block">
+ </div>
+
+  <script>
+    $(document).ready(function() {
+      $('#login').mouseenter(function() {
+        $('#login').fadeOut('slow', 0.25);
+          $("#login").stop().animate({height : "300px"});
+      });
+    });
+  </script>
+</div>
